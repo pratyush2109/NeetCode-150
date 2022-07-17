@@ -32,8 +32,6 @@ class Solution:
         
         for i in range(n1,n2):
             d2[s2[i-n1]]-=1
-            if d2[s2[i-n1]]==0:
-                del d2[s2[i-n1]]
             if s2[i] not in d2:
                 d2[s2[i]]=1
             else:
