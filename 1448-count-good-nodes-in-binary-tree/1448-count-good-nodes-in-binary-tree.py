@@ -13,8 +13,8 @@ class Solution:
             ans[0]+=1
             maximum=root.val
             
-        self.dfs(root.right, ans, maximum)
         self.dfs(root.left, ans, maximum)
+        self.dfs(root.right, ans, maximum)
     
     def goodNodes(self, root: TreeNode) -> int:
         ans=[0]
