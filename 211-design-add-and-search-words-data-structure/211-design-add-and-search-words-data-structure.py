@@ -26,8 +26,8 @@ class WordDictionary:
                 return fun(index+1, root.children[word[index]])
             else:
                 if word[index] == '.':
-                    for key, value in root.children.items():
-                        if fun(index+1, value):
+                    for key, child in root.children.items():
+                        if fun(index+1, child):
                             return True
                 return False
         return fun(0, self.root)
