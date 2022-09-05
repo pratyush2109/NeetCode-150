@@ -13,7 +13,7 @@ class Solution:
         rank=[1]*(n+1)
         
         def find(n):
-            p=n
+            p=parent[n]
             while p!=parent[p]:
                 parent[p]=parent[parent[p]]
                 p=parent[p]
